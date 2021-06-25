@@ -199,6 +199,7 @@ nav{
     background-position: center;;
     height: 70vh;
     background-image: url("../images/xn3.png");
+    background-image: linear-gradient(to bottom,rgba(102,180,238,0.42),rgba(66,140,222,0.73)),url("../images/xn3.png");
     position: relative;
     margin-bottom: 70px;
 }
@@ -445,7 +446,9 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
+    .bottomimg{
+        height: auto;
+    }
     .usercards{
         display: flex;
         flex-direction: column;
@@ -457,8 +460,8 @@ footer{
         display: flex;
         flex-direction: row;
         width: 80vw;
-        height: 20vh;
-        margin-top: 20px;
+        height: auto;
+        margin-top: 10px;
         
     }
 
