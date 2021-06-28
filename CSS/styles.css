@@ -1,6 +1,6 @@
 *{padding: 0; margin: 0; font-family: "Poppins", "sans-serif"; box-sizing: border-box;}
 .headr{
-    width: 100vw;
+    width: 99%;
     height: 80px;
 }
 
@@ -11,19 +11,23 @@
     flex-wrap: wrap;
     border-bottom: 1px solid gray;
 }
-
+.phborder
+{
+    height: 63px;
+    border-right: 1px solid gray;
+}
 .phNumber{
-    padding: 0px;
+    padding-top: 20px;
+    padding-right: 10px;
     color: black;
     font-weight: bold;
-    border-right: 1px solid gray;
 }
 .phNumber i{
     color: lightskyblue;
 }
 
 .socialMedia{
-    padding-left: 30%;
+    padding-left: 50%;
     padding-right: 0%;
     text-align: end;
     margin-right: 0px;
@@ -42,8 +46,14 @@
 }
 
 nav{
-    width: 100vw;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 80px;
+    align-content: center;
+    width: 90%;
     background-color: none;
     border-bottom: 1px solid gray;
 }
@@ -59,22 +69,23 @@ nav{
 .menu{
     float: right;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
-.menu li{
-    display: inline-block;
-}
 
 .menu a{
     text-decoration: none;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .menu a{
     color: black;
     font-weight: bold;
+}
+.menu select{
+    color: black;
+    border: none;
 }
 
 #homelink{
@@ -83,7 +94,6 @@ nav{
 }
 
 .checkbtn{
-    float: right;
     margin-right: 20px;
     display: none;
     font-size: 25px;
@@ -97,20 +107,24 @@ nav{
 }
 
 .bannerimg{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 80px;
     background-image: url("../images/home-banner-bg.png");
     position: relative;
-    margin-bottom: 70px;
 }
 
 .bannerimg h1{
     position: absolute;
-    bottom: 50%;
-    top: 50%;
+    bottom: 60%;
+    top: 40%;
     transform: translate(0%,-50%);
     font-size: 64px;
-    margin-left: 50px;
+    margin-left: 120px;
     color: white;
     font-weight: 200;
 }
@@ -121,30 +135,25 @@ nav{
     align-items: center;
     flex-direction: column;
     word-spacing: 4px;
-    padding: 30px;
+    padding-top: 20px;
 }
 
 
 .headingPara{
-    margin-top: 5px;
     color: gray;
     font-weight: lighter;
     font-size: 30px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .paragraph p{
-    margin-top: 10px;
     color: #777777;
-    font-weight: lighter;
 }
 
 .cards {
-    
     display: flex;
     flex-direction: row;
     justify-content:center;
-    margin-top: 6vh;
+    margin-top: 3%;
 }
 
 .card {
@@ -152,8 +161,7 @@ nav{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
-    margin: 2vw;
-/* grid-template-rows: max-content 200px 1fr; */
+    margin: 2%;
 }
 
 .card img {
@@ -166,7 +174,7 @@ nav{
     padding-top: 10%;
     padding-left: 5%;
     font-size: 20px;
-    color: #333333;
+    color: #777777;
     font-weight: lighter;
 }
 
@@ -176,10 +184,11 @@ nav{
 }
 
 .Border{
-    border-left: 1px solid #777777;
-    border-right: 1px solid #777777;
-    border-bottom: 1px solid #777777;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
+
 
 .Projects{
     padding-top: 250px;
@@ -187,11 +196,11 @@ nav{
 }
 
 .subnav{
-    margin-top: 10px;
-    width: 100vw;
+    padding-top: 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
 .subnav a{
@@ -205,11 +214,11 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .bottomimg{
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;;
@@ -217,7 +226,6 @@ nav{
     background-image: url("../images/xn3.png");
     background-image: linear-gradient(to bottom,rgba(102,180,238,0.42),rgba(66,140,222,0.73)),url("../images/xn3.png");
     position: relative;
-    margin-bottom: 70px;
 }
 
 .usercards{
@@ -229,8 +237,8 @@ nav{
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin: 25vh 10px;
-    width: 30vw;
+    margin: 15% 10px;
+    width: 30%;
     height: auto;
     color: #777777;
 }
@@ -242,22 +250,22 @@ nav{
 }
 
 .usercard p{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 .usercard h1{
     font-weight: lighter;
-    margin-left: 20px;
-    margin-top: 20px;
+    padding-left: 20px;
 }
 
 .usercard2{
     display: flex;
     flex-direction: row;
     background-color: white;
-    margin: 25vh 10px;
-    width: 30vw;
+    margin: 15% 10px;
+    width: 30%;
     height: auto;
     color: #777777;
 }
@@ -272,6 +280,7 @@ nav{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    padding-right: 10px;
 }
 .usercard2 h1{
     font-weight: lighter;
@@ -280,7 +289,7 @@ nav{
 }
 
 footer{
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: black;
 }
@@ -316,7 +325,7 @@ footer{
 }
 .nletter input{
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px;
     height: 40px;
     border: 1px solid white;
@@ -326,7 +335,7 @@ footer{
     height: 40px;
     margin-left: 10px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px;
     border: none;
     outline: none;
@@ -375,6 +384,12 @@ footer{
         margin-left: 30%;
     }
 }
+@media (max-width : 1385px)
+{
+    .headr{
+        display: none;
+    }
+}
 @media (max-width : 1280px)
 {
     .copyright .icons{
@@ -412,13 +427,13 @@ footer{
         font-size: 30px;
         padding-left: 50px;
         line-height: 80px;
-    }    
-    
+    }
+
     .checkbtn{
         display: block;
         line-height: 80px;
     }
-    
+
     .menu{
         display: flex;
         flex-direction: column;
@@ -450,7 +465,7 @@ footer{
         justify-content: left;
         align-items: flex-start;
     }
-    
+
     .inputBtn{
         display: flex;
         flex-direction: column;
@@ -461,8 +476,8 @@ footer{
     }
     .feed{
         color: white;
-        margin-left: 5%;
-        width: 100vw;
+        padding-left: 5%;
+        width: 100%;
         margin-top: 10%;
     }
 
@@ -482,13 +497,21 @@ footer{
     }
 }
 
-@media (max-width : 860px) {
+@media (max-width : 768px) {
     .cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
+
+    .card{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .bottomimg{
         height: auto;
     }
@@ -502,15 +525,15 @@ footer{
     .usercard{
         display: flex;
         flex-direction: row;
-        width: 80vw;
+        width: 80%;
         height: auto;
         margin-top: 50px;
-        
+
     }
 
     .bannerimg{
-        width: 100vw;
-        height: 90vh;
+        width: 100%;
+        height: 70vh;
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
@@ -530,6 +553,45 @@ footer{
 @media (max-width : 875px){
     .feed{
         display: flex;
+        width: 90%;
         flex-direction: column;
     }
 }
+@media (max-width: 680px)
+{
+    .card{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width : 415px)
+{
+    nav{
+        width: 100%;
+    }
+}
+@media (max-width : 370px)
+{
+    nav{
+        width: 100%;
+    }
+    .logo{
+        font-size: 10px;
+        padding: 0px;
+    }
+
+}
+@media(max-width:768px)
+{
+    .bannerimg h1{
+        margin-left: 20px;
+        font-size: 40px;
+    }
+}
+@media (max-width : 685px)
+ {
+     .paragraph{
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+ }
